@@ -4,97 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Madera Labs - User Experience Design, User Research</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="hero">
-      <div class="container">
-        <img src="" />
-        <h1>We help you create experiences people crave.</h1>
-        <h2>
-          The biggest risk in software development is making things people don't care about. We
-          help you figure out just what your customers want, and design experiences that delight them.
-        </h2>
-        <button class="btn btn-primary">Schedule a call with us</button>
+      <div class="position-absolute logo w-100 text-center"> 
+        <img src="images/madera_logo.png">
       </div>
+      <div class="position-absolute w-100 text-center headline">
+        <h1 class="mt-5 w-75 mx-auto">We help you design products people <strong>love.</strong></h1> 
+        <button class="btn btn-lg btn-primary mt-5">Schedule a call with us</button>
+      </div>
+      <video autoplay loop class="video-bg" plays-inline muted>
+        <source src="images/header-movie.mp4" type="video/mp4">
+      </video>
     </section>
-    <section class="clients">
-      <div class="container">
-        <h6>Some of the people we've worked with:</h6>
-        <div class="d-flex align-items-center">
-          <img src="">
-          <img src="">
-          <img src="">
-          <img src="">
-          <img src="">
-          <img src="">
+    <section class="about p-5 text-center">
+      Customer research and user experience design that drives results.
+    </section>
+    <section class="clients text-center border-bottom">
+      <div class="container py-5">
+        <p class="small">Some of the people we've worked with:</p>
+        <div class="d-flex align-items-center justify-content-between pt-3">
+          <img src="images/bcbs.png" class="mr-3">
+          <img src="images/coke.png" class="mr-3">
+          <img src="images/bic.png" class="mr-3">
+          <img src="images/google.png" class="mr-3">
+          <img src="images/metlife.png" class="mr-3">
+          <img src="images/gbod.png" class="mr-3">
         </div>
       </div>
     </section>
     <section class="what-we-do">
-      <div class="container">
-        <p>
+      <div class="container w-75 pb-5">
+        <p class="text-center my-5">
           We understand, creating remarkable product experiences that customers 
           love is hard….really hard. We want to help you deliver world-class product 
           experiences that your users absolutely love.
         </p>
-        <div class="d-flex align-items-center service">
-          <img src="">
+        <div class="d-flex align-items-center service mb-3">
+          <img src="images/looking-at-ipad.jpg" class="rounded-circle mr-5">
           <div>
             <h3>We help you understand what your customers really want.</h3>
             <p>
-              User research to help you get complete clarity on what your customers want, 
-              so you'll be amazing at delivering great experiences to them.
+              We specialize in user research to help you get complete clarity on 
+              what your customers want, so you'll be amazing at delivering great experiences to them.
             </p>
           </div>
         </div>
-        <div class="d-flex align-items-center service">
-          <img src="">
+        <div class="d-flex align-items-center service flex-row-reverse mb-3">
+          <img src="images/sketching.jpg" class="rounded-circle ml-5">
           <div>
-            <h3>We help you understand what your customers really want.</h3>
+            <h3>We help you design products that deliver a world-class user experience.</h3>
             <p>
-              User research to help you get complete clarity on what your customers want, 
-              so you'll be amazing at delivering great experiences to them.
+              We're passionate designers, working to help you design products that are delightful, 
+              usable and fun, based all on what we know about what your customers want.
             </p>
           </div>
         </div>
-        <div class="d-flex align-items-center service">
-          <img src="">
+        <div class="d-flex align-items-center service mb-3">
+          <img src="images/speaker.jpg" class="rounded-circle mr-5">
           <div>
-            <h3>We help you understand what your customers really want.</h3>
+            <h3>We empower your team to be customer and user advocates.</h3>
             <p>
-              User research to help you get complete clarity on what your customers want, 
-              so you'll be amazing at delivering great experiences to them.
+              We provide training and workshops to help your company become customer 
+              centered and develop empathy for the people you're serving.
             </p>
           </div>
         </div>
       </div>
     </section>
+    <!--
     <section class="testimonial">
       <h3>Madera Labs some testimonial here</h3> 
     </section>
-    <section class="collector">
-      <div class="container">
-        <img src="">
-        <h4>5 Better Content Habits for Growth in 2019</h4>
-        <p>
-          You know that content is the engine for growth. It's what fuels long-term trust 
-          and discovery, and (despite what the rest of the SEO people tell you) is 
-          the single most important part of being discovered organically. This guide 
-          will give you the tips you need to explode your content production in 2019 and 
-          blow the lid off your marketing goals.
-        </p>
-        <form>
-          <input type="text" plaecholder="Your email address..." />
-          <button class="btn btn-secondary">Send Me The Guide!</button>
-        </form>
+    -->
+    <section class="collector py-5 border-top">
+      <div class="container d-flex py-5"> 
+        <img src="images/content-habits-cover.png" class="mr-4">
+        <div class="d-flex flex-column justify-content-center">
+          <h3 class="mb-3">5 Better Content Habits for Growth in 2019</h3>
+          <p>
+            You know that content is the engine for growth. It's what fuels long-term trust 
+            and discovery, and (despite what the rest of the SEO people tell you) is 
+            the single most important part of being discovered organically.
+          </p>
+          <p>
+            This guide 
+            will give you the tips you need to explode your content production in 2019 and 
+            blow the lid off your marketing goals.
+          </p>
+          <form class="form d-flex">
+            <input type="text" placeholder="Your email address..." class="form-control mr-3" />
+            <button class="btn btn-secondary">Send Me The Guide!</button>
+          </form>
+        </div>
       </div>
     </section>
-    <section>
-      <h2>Build the right thing, then build the thing right.</h2>
+    <section class="cta py-5 text-center">
+      <h2>Build the right thing, and build the thing right.</h2>
       <h2><strong>We'll help you do just that.</strong></h2>
-      <button class="btn btn-white">Schedule a Call</button>
+      <button class="btn btn-lg btn-white mt-3">Schedule a Call</button>
     <section>
   </body>
 </html>

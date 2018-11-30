@@ -1,0 +1,71 @@
+// Colors
+
+$primary: #ED953B;
+$secondary: #1b2527;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+@import 'vendor/bootstrap/bootstrap.scss';
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.hero {
+  color: #ffffff;
+  z-index: 9999;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  h1 {
+    font-size: 3.5em;
+  }
+  video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .headline {
+    bottom: 100px;
+  }
+  .logo {
+    top: 30px;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.what-we-do {
+  img {
+    width: 250px;
+  }
+}
+
+.about {
+  font-size: 1.25em;
+  background-color: $secondary;
+  color: white;
+}
+
+.collector {
+  background-color: #F8F8F8;
+  img {
+    height: 400px;
+  }
+}
+
+.cta {
+  background-color: $primary;
+  color: #ffffff;
+  button {
+    color: $primary;
+  }
+}
+
