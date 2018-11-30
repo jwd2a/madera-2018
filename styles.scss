@@ -69,3 +69,26 @@ $secondary: #1b2527;
   }
 }
 
+@media(max-width: 1075px) {
+  .hero {
+    video {
+      display: none;
+    }
+    background-image: url('images/header-still.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .service {
+    text-align: center;
+  }
+  .collector img {
+    height: auto;
+    width: 250px;
+  }
+}
