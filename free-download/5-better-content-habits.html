@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12160623-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-12160623-1');
+  </script>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Free Guide for Better Content in 2019</title>
   <link rel="stylesheet" href="/styles.css" />
+  <script type="text/javascsript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <section class="header pb-5">
@@ -34,6 +44,11 @@
         </div>
         <button type="submit" class="btn btn-primary d-block d-md-none mt-3" name="subscribe" id="mc-embedded-subscribe">Send Me the Guide!</button>
       </form>
+      <div id="mce-responses" class="mt-3 invisible">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <div class="nice-message" style="display: none"></div>
     </div>
   </section>
   <section class="container py-5">
@@ -59,8 +74,32 @@
   </section>
   <section class="cta p-5">
     <div class="container text-center">
-      Need help with your content in the New Year? Let's talk. 
+      Need help with your content in the New Year? <a href="mailto:justin@maderalabs.com">Let's talk.</a>
     </div>
   </section>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <script type='text/javascript'>
+    var mutationObserver = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mut) {
+        console.log('MUT', mut);
+        var div = $mcj('.nice-message');
+        div.hide();
+        if(mut.target.innerHtml != '') {
+          var message = 'Check your email! Your guide is on its way!';
+          if (mut.target.id === 'mce-error-response') {
+            message = 'Sorry, there was a problem. We\'re taking a look at it!';
+          }
+          div.html(message);
+          div.show();
+        }
+      });
+    });
+    mutationObserver.observe(document.getElementById('mce-error-response'), {
+      attributes: true,
+    });
+    mutationObserver.observe(document.getElementById('mce-success-response'), {
+      attributes: true,
+    });
+  </script>
 </body>
 </html>
